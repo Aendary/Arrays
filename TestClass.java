@@ -5,6 +5,7 @@ public class TestClass
         float f = 2.5f;
         boolean flag = true;
         String[] array = {"Alpha","Bravo","Charlie","Delta","Echo"};
+        int Starry = array.length - 1;
         for (int Starray = 0; Starray < array.length; Starray++) {
             System.out.println(array[Starray]);
             
@@ -13,7 +14,11 @@ public class TestClass
             System.out.println(value);
         }
         System.out.println();
-        for (int Starray = 0; Starray < array.length; Starray++)
-            System.out.println("-"); //Alpha-Bravo-Charlie-Delta-Echo
+        for (int Staray = 0; Staray < array.length; Staray++) {
+            System.out.print(array[Staray]);
+            if (Staray < Starry) {
+                System.out.print("-"); 
+            }
+        }
     }
 }
